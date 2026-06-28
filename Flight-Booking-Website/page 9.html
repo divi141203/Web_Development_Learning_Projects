@@ -1,0 +1,221 @@
+<html>
+    <head>
+        <title>REGISTRATION</title>
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="style9.css">
+        <script>
+            function check1()
+            {
+                abc.innerText="";
+                var name1=document.getElementById("fname").value;
+                            if(name1.length<1)
+                                {
+                                abc.innerText="Field must be filled";
+                                f1=0;
+                                }
+                var re=new RegExp("^[0-9]");
+                            if(re.test(name1))
+                                {
+                                abc.innerText="It must not be digit";
+                                f1=0;
+                                }
+            }
+            function check2()
+            {
+                def.innerText="";
+                var name1=document.getElementById("lname").value;
+                            if(name1.length<1)
+                                {
+                                def.innerText="Field must be filled";
+                                f1=0;
+                                }
+                var re=new RegExp("^[0-9]");
+                            if(re.test(name1))
+                                {
+                                def.innerText="It must not be digit";
+                                f1=0;
+                                }
+            }
+            function check3()
+            {
+                ghi.innerText="";
+                var name3=document.getElementById("email").value;
+                            if(name3.length<1)
+                                {
+                                ghi.innerText="Field must be filled";
+                                f1=0;
+                                }
+                var re2=new RegExp("^[a-zA-Z0-9]+@[a-zA-Z]+\.[a-zA-Z]{2,4}$");
+                            if(!re2.test(name3))
+                            {
+                            ghi.innerText="Invalid Email-id";
+                            f1=0;
+                            }
+            }
+            function check4()
+            {
+                jkl.innerText="";
+                var name6=document.getElementById("mobile").value;
+                            if(name6.length<10)
+                                {
+                                jkl.innerText="Must be 10 digit";
+                                f1=0;
+                                }
+                var ae=new RegExp("^[0-9]+$");
+                            if(!ae.test(name6))
+                                {
+                                jkl.innerText="Must be a number";
+                                f1=0;
+                                }
+            }
+            function check5()
+            {
+                mno.innerText="";
+                var name1=document.getElementById("address").value;
+                            if(name1.length<1)
+                                {
+                                mno.innerText="Field must be filled";
+                                f1=0;
+                                }
+            }
+            function check6()
+            {
+                pqr.innerText="";
+                var name6=document.getElementById("pincode").value;
+                            if(name6.length<6)
+                                {
+                                pqr.innerText="Must be 6 digit";
+                                f1=0;
+                                }
+                var ae=new RegExp("^[0-9]+$");
+                            if(!ae.test(name6))
+                                {
+                                pqr.innerText="Must be a number";
+                                f1=0;
+                                }
+            }
+            function check7()
+            {
+                stu.innerText="";
+                var passone = document.getElementById("pass");
+                            if(passone.value == "")
+                                {
+                                stu.innerText="Field must be filled";
+                                f1=0;
+                                }
+                            else if(passone.value.length < 8)
+                                {
+                                stu.innerText="Must be 8 characters";
+                                f1=0;
+                                }
+                            else { }
+            }
+            function check8()
+            {
+                vwx.innerText="";
+                var name2=document.getElementById("pass1").value;
+                var name1=document.getElementById("pass").value;
+                            if(name2.length<1)
+                                {
+                                vwx.innerText="Field must be filled";
+                                f1=0;
+                                }
+                            if(name1!=name2)
+                                {
+                                vwx.innerText="Password does not match";
+                                f1=0;
+                                }
+            }
+            function show()
+            {			
+                if(f1==0)
+                {
+                    alert("Your Registeration is not successful");
+                }
+                else
+                {
+                    alert("Your registeration is successful");
+                }
+            }
+        </script>
+    </head>
+    <body>
+        <header>
+            <img src="images/f1.png" width="80px" height="80px">
+            <nav>
+                <ul>
+                    <li><a href="page 1.html">Home</a></li>
+                    <li><a href="page 2.html">About Us</a></li>
+                    <li><a href="page 3.html">Booking</a></li>
+                    <li><a href="page 5.html">Airlines</a></li>
+                    <li><a href="page 7.html">Contact Us</a></li>
+                    <li><a href="page 8.html">Login</a></li>
+                    <li><a href="page 9.html">Register</a></li>
+                </ul>
+            </nav>
+        </header>
+        <section>
+            <div class="main">
+                <form name="form1">
+                    <table>
+                        <tr>
+                            <td><label>First Name:</label></td>
+                            <td><input type="text" name="fname" id="fname" placeholder="Enter First Name..." onblur="check1()"></td>
+                            <td><p id="abc"></p></td>
+                        </tr>
+                        <tr>
+                            <td><label>Last Name:</label></td>
+                            <td><input type="text" name="lname" id="lname" placeholder="Enter Last Name..." onblur="check2()"></td>
+                            <td><p id="def"></p></td>
+                        </tr>
+                        <tr>
+                            <td><label>Gender:</label></td>
+                            <td><label>Male:</label>
+                                <input type="radio" name="gender" id="gender" value="male">
+                                <label>Female:</label>
+                                <input type="radio" name="gender" id="gender" value="female">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><label>Email Id:</label></td>
+                            <td><input type="email" name="email" id="email" placeholder="Enter your Email-Id..." onblur="check3()"></td>
+                            <td><p id="ghi"></p></td>
+                        </tr>
+                        <tr>
+                            <td><label>Phone Number:</label></td>
+                            <td><input type="number" name="mobile" id="mobile" placeholder="Enter Phone Number..." onblur="check4()"></td>
+                            <td><p id="jkl"></p></td>
+                        </tr>
+                        <tr>
+                            <td><label>Address:</label></td>
+                            <td><input type="textarea" size="20" name="address" id="address" placeholder="Address" onblur="check5()"></td>
+                            <td><p id="mno"></p></td>
+                        </tr>
+                        <tr>
+                            <td><label>Pin Code:</label></td>
+                            <td><input type="number" name="pincode" id="pincode" placeholder="Enter Pincode..." onblur="check6()"></td>
+                            <td><p id="pqr"></p></td>
+                        </tr>
+                        <tr>
+                            <td><label>Password:</label></td>
+                            <td><input type="text" name="pass" id="pass" placeholder="Enter Password..." onblur="check7()"></td>
+                            <td><p id="stu"></p></td>
+                        </tr>
+                        <tr>
+                            <td><label>Confirm Password:</label></td>
+                            <td><input type="text" name="pass1" id="pass1" placeholder="Confirm Password..." onblur="check8()"></td>
+                            <td><p id="vwx"></p></td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td><input type="Submit" class="submit" onClick="show()"></td>
+                        </tr>
+                    </table>
+                </form>
+            </div>
+        </section>
+        <footer>
+            <p>Please follow us on Instagram, Facebook and Twitter to know about exciting offers</p>
+        </footer>
+    </body>
+</html>
