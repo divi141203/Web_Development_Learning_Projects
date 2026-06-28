@@ -1,0 +1,123 @@
+.header-text{
+    display:flex;
+    margin-left: 100px;
+    margin-top: 0%;
+}
+.d1{
+    flex-basis:35%;
+}
+.d2 img{
+    margin-left: 800px;
+    float: right;
+    margin-top: 0%;
+}
+.d2{
+    flex-basis:0%;
+}
+.header-text{
+    margin-top:13%;
+    margin-left: 50px;
+    font-size:30px;
+    font-family:'Akaya Kanadaka', cursive;
+    opacity:0;
+    animation: slideRight 1s ease forwards;
+    animation-delay: 1s;
+}
+.header-text h1{
+    font-size:60px;
+    margin-top: 20px;
+}
+.header-text h1 span{
+	background: linear-gradient(to right,blue 0%, magenta 100%);
+    background-clip: border-box;
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+}
+section h2{
+    padding-top: 100px;
+    font-family:'Akaya Kanadaka', cursive;
+    font-size: xx-large;
+}
+.section #img1{
+    padding-left: 200px;
+    padding-top: 20px;
+    width: 1300px;
+    height: 550px;
+}
+.section pre{
+    font-family:'Akaya Kanadaka', cursive;
+    font-size: x-large;
+    text-align: center;
+    padding-top: 5px;
+}
+.main{
+    width: 60%;
+    margin: 2rem auto; 
+    margin-left: 250px;
+    padding-left: 100px;
+}
+.d1{
+    display:grid;
+    grid-gap:5px;
+}
+.img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+.image {
+    width: 40%;
+    height: 100%;
+    position: absolute;
+    bottom: 0;
+    right: 100px;
+ }
+ .image img {
+    height: 180%;
+    width: 80%;
+    position:absolute;
+    left: 50%;
+    bottom: 5%;
+    transform: translate(-60%);
+ }
+.f2 {
+    grid-column-start:1;
+    grid-column-end:11;
+    grid-row-start:1;
+    grid-row-end:5;
+}
+.f3 {
+    grid-column-start:1;
+    grid-column-end:11;
+    grid-row-start:5;
+    grid-row-end:10;
+}
+.f4 {
+    grid-column-start:11;
+    grid-column-end:30;
+    grid-row-start:1;
+    grid-row-end:10;
+}
+.f5 {
+    grid-column-start:30;
+    grid-column-end:40;
+    grid-row-start:1;
+    grid-row-end:5;
+}
+.f6 {
+    grid-column-start:30;
+    grid-column-end:40;
+    grid-row-start:5;
+    grid-row-end:10;
+}
+@keyframes slideRight{
+    0%{
+        opacity:0;
+        transform:translateX(-100px);
+    }
+    100%{
+        opacity:1;
+        transform:translateX(0);
+    }
+}

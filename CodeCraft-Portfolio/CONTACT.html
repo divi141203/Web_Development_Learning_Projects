@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ABOUT</title>
+    <link rel="stylesheet" href="style/style.css">
+    <link rel="stylesheet" href="style/style5.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href='https://fonts.googleapis.com/css?family=Lugrasimo' rel='stylesheet'>
+    <script>
+        function check1()
+        {
+            abc.innerText="";
+            var name1=document.getElementById("name").value;
+                        if(name1.length<1)
+                            {
+                            abc.innerText="Field must be filled";
+                            f1=0;
+                            }
+            var re=new RegExp("^[0-9]");
+                        if(re.test(name1))
+                            {
+                            abc.innerText="It must not be digit";
+                            f1=0;
+                            }
+        }
+        function check2()
+        {
+            def.innerText="";
+            var name3=document.getElementById("email").value;
+                        if(name3=="")
+                        {
+                        def.innerText="Field must be filled";
+                        f1=0;
+                        }
+            var re2=new RegExp("^[a-zA-Z0-9]+@[a-zA-Z]+\.[a-zA-Z]{2,4}$");
+                        if(!re2.test(name3))
+                        {
+                        def.innerText="Invalid Email-id";
+                        f1=0;
+                        }
+        }
+        function check3()
+        {
+            ghi.innerText="";
+            var name6=document.getElementById("phone").value;
+                        if(name6.length<10)
+                        {
+                        ghi.innerText="Must be 10 digit";
+                        f1=0;
+                        }
+            var ae=new RegExp("^[0-9]+$");
+                        if(!ae.test(name6))
+                            {
+                            ghi.innerText="Must be a number";
+                            f1=0;
+                            }
+        }
+        function check4()
+        {
+            jkl.innerText="";
+            var name1=document.getElementById("location").value;
+                        if(name1.length<1)
+                            {
+                            jkl.innerText="Field must be filled";
+                            f1=0;
+                            }
+        }
+        function check5()
+        {
+            mno.innerText="";
+            var name1=document.getElementById("msg").value;
+                        if(name1.length<1)
+                            {
+                            mno.innerText="Field must be filled";
+                            f1=0;
+                            }
+        }
+        function show()
+        {			
+            if(f1==0)
+            {
+                alert("Your Registeration is not successful");
+            }
+            else
+            {
+                alert("Your registeration is successful");
+            }
+        }
+    </script>
+</head>
+<body>
+    <header>
+        <img src="img/IMG2.png" class="logo" height="100px" width="400px">
+        <nav>
+            <ul>
+                <li><a href="index.html" style="--i:2;">Home</a></li>
+                <li><a href="ABOUT.html" style="--i:2;">About</a></li>
+                <li><a href="GALLERY.html" style="--i:2;">Gallery</a></li>
+                <li><a href="VIDEOS.html" style="--i:2;">Videos</a></li>
+                <li><a href="CONTACT.html" style="--i:2;">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <section>
+        <table>
+            <tr>
+                <td rowspan="11"><img id="img1" src="img/studio.jpeg" width="600" height="500"></td>
+                <td>
+                    <div class="main">
+                        <form name="form1">
+                            <center>
+                                <table>
+                                    <th>Get in touch</th>
+                                    <tr>
+                                        <td><input type="text" name="name" id="name" placeholder="NAME*" onblur="check1()" required></td>
+                                        <td><p id="abc"></p></td>
+                                    </tr>
+                                    <tr>
+                                        <td><br></td>
+                                    </tr>
+                                    <tr>
+                                        <td><input type="email" name="email" id="email" placeholder="EMAIL*" onblur="check2()" required></td>
+                                        <td><p id="def"></p></td>
+                                    </tr>
+                                    <tr>
+                                        <td><br></td>
+                                    </tr>
+                                    <tr>
+                                        <td><input type="text" name="phone" id="phone" placeholder="PHONE*" onblur="check3()" required></td>
+                                        <td><p id="ghi"></p></td>
+                                    </tr>
+                                    <tr>
+                                        <td><br></td>
+                                    </tr>
+                                    <tr>
+                                        <td><input type="textarea" size="20" name="location" id="location" placeholder="LOCATION*" onblur="check4()" required></td>
+                                        <td><p id="jkl"></p></td>
+                                    </tr>
+                                    <tr>
+                                        <td><br></td>
+                                    </tr>
+                                    <tr>
+                                        <tr>
+                                            <td><input type="text" id="msg" placeholder="MESSAGE*" onblur="check5()" required></td>
+                                            <td><p id="mno"></p></td>
+                                        </tr>
+                                    </tr>
+                                    <tr>
+                                        <td><br></td>
+                                    </tr>
+                                    <tr>
+                                        <td><input type="Submit" class="submit" onClick="show()"></td>
+                                    </tr>
+                                </table>
+                            </center>
+                        </form>
+                    </div>
+                </td>
+            </tr>
+        </table><br>
+        <table>
+            <tr>
+                <td><pre>Thank you for your interest in Tanamachi Studio Designs. 
+We look forward to speaking with you soon. If you would 
+like to inquire more please visit the studio directly.<br>
+<i class='bx bx-phone'> 123456789</i>
+<i class='bx bx-envelope'> danatanamachi@yahoo.com</i>
+<i class='bx bx-location-plus'> 5826 Redwood River Dr, Kingwood, TX 77345</i></pre></td>
+                <td><img id="img2" src="img/studio2.jpeg" width="700" height="500"></td>
+            </tr>
+        </table>
+    </section>
+    <footer>
+        <a href="#"><i class='bx bxl-facebook'></i></a>
+        <a href="#"><i class='bx bxl-instagram' ></i></a>
+        <a href="#"><i class='bx bxl-youtube' ></i></a><pre>&copy;2023 DIGICRAZE</pre>
+    </footer>
+</body>
+</html>
+<a href="https://player.vimeo.com/video/363869011?title=0&amp;byline=0&amp;portrait=0"></a>
