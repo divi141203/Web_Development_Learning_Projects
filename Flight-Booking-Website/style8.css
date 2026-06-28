@@ -1,0 +1,35 @@
+section{
+    margin-top: 2px;
+    font-size: xx-large;
+    color: white;
+}
+.loginform{
+    background-image: url("images/p3.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 650px;
+}
+.form1{
+    align-items: center;
+    max-width: 500px;
+    padding-top: 150px;
+    margin : auto;
+    margin-top: 1px;
+    width: 50%;
+}
+.loginform input,label{
+    width: 100%;
+    padding: 12px;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+  }
+.s1{
+    background-color: blueviolet;
+    color: white;
+    padding:20px;
+    font-size: x-large;
+}

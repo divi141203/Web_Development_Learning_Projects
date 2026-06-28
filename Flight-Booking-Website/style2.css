@@ -1,0 +1,15 @@
+section{
+    background-image: url("images/ab1.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 630px;
+}
+section div pre{
+    color: white;
+    font-style: italic;
+    font-size: x-large;
+    margin-left: 2px;
+    padding-top: 150px;
+    margin-top: 2px;
+}

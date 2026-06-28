@@ -1,0 +1,32 @@
+section{
+    background-image: url("images/contact.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 1000px;
+    margin-top: 2px;
+}
+.d1{
+    border-color: white;
+    color: white;
+    font-size: x-large;
+    text-align: center;
+}
+pre{
+    color:white;
+    font-size: x-large;
+}
+#t1{
+    border:solid white 2px;
+}
+#msg{
+    width: 605px;
+    height: 150px;
+}
+.form input,textarea{
+    width: 300px;
+    padding: 5px;
+    border-radius: 4px;
+    box-sizing: border-box;
+    resize: vertical;
+}

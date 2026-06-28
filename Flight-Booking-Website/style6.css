@@ -1,0 +1,14 @@
+section{
+    background-image: url("images/vbg.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 2400px;
+    margin-top: 5px;
+    padding-top: 5px;
+}
+h1{
+    color: blue;
+    font-size: x-large;
+    text-decoration: underline;
+}

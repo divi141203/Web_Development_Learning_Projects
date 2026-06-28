@@ -1,0 +1,31 @@
+.b1{
+    background-repeat: no-repeat;
+    height: 50px;
+    width: 150px;
+    margin: 4px;
+    mix-blend-mode:  multiply;
+    filter: contrast(1);
+}
+.b2{
+    background-repeat: no-repeat;
+    height: 50px;
+    width: 150px;
+    margin: 4px;
+    mix-blend-mode:  multiply;
+    filter: contrast(1);
+}
+.d1{
+    background-image: url("images/p4.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 1000px;
+    margin-top: 2px;
+}
+.bg1,.bg2,.bg3,.bg4,.bg5,.bg6,.bg7,.bg8{
+    mix-blend-mode:  multiply;
+    filter: contrast(1);
+}
+#hr1{
+    border: 2px solid white;
+}

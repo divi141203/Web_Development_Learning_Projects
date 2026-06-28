@@ -1,0 +1,50 @@
+section{
+    background-image: url("images/p2.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 710px;
+    color: white;
+    font-size: x-large;
+    text-align: center;
+    margin-top: 2px;
+    padding-top: 20px;
+    padding-bottom: 150px;
+}
+.form1{
+    align-items: center;
+    max-width: 500px;
+    border : 5px solid white;
+    margin : auto;
+    width: 50%;
+}
+.form2{
+    padding:0 20px 20px;
+    color: white;
+}
+.form2 input,label,select{
+    width: 100%;
+    padding: 12px;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+  }
+.form2 label{
+    margin-bottom: 5px;
+    margin-top: 10px;
+    font-size: x-large;
+}
+.button{
+    margin: 10px 20px;
+}
+.button radio{
+    margin:20px 10px 20px 0px;
+}
+button{
+    background-color: orange;
+    color: white;
+    padding:20px;
+    font-size: x-large;
+}
